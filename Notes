@@ -1,4 +1,4 @@
-
+# Intermediate SQL Notes
 
 
 --SELECT gender, AVG(salary) as avg_salary
