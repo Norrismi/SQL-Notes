@@ -1,5 +1,7 @@
 # Intermediate SQL Notes
 
+## Test
+
 
 --SELECT gender, AVG(salary) as avg_salary
 --FROM employee_demographics dem
