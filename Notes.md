@@ -80,10 +80,10 @@ JOIN CTE_Example2
 
 
 
-##Temporary Tables (Tables only viewable to the session they are created in)
-	# Specific syntax needed for SQL Server
-	# Temp Tables are used in more advanced procedures 
-# First Ex. Not as popular
+### Temporary Tables (Tables only viewable to the session they are created in)
+	## Specific syntax needed for SQL Server
+	## Temp Tables are used in more advanced procedures 
+## First Ex. Not as popular
 ```sql
 CREATE TABLE #temp_table
 ( first_name varchar(50),
@@ -107,8 +107,8 @@ FROM employee_salary
 WHERE salary >= 50000;
 ```
 
-## Stored Procedures (way to save SQL code to reuse)
-	# Specific syntax needed for SQL Server
+### Stored Procedures (way to save SQL code to reuse)
+	## Specific syntax needed for SQL Server
 
 ```sql
 CREATE PROCEDURE large_salaries
