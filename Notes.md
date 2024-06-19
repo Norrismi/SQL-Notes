@@ -108,7 +108,7 @@ WHERE salary >= 50000;
 ```
 
 ### Stored Procedures (way to save SQL code to reuse)
-	## Specific syntax needed for SQL Server
+	- Specific syntax needed for SQL Server
 
 ```sql
 CREATE PROCEDURE large_salaries
