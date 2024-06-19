@@ -76,3 +76,69 @@ FROM CTE_Example
 JOIN CTE_Example2
 	ON CTE_Example.employee_id = CTE_Example2.employee_id;
 ```
+
+
+
+
+##Temporary Tables (Tables only viewable to the session they are created in)
+	# Specific syntax needed for SQL Server
+	# Temp Tables are used in more advanced procedures 
+# First Ex. Not as popular
+```sql
+CREATE TABLE #temp_table
+( first_name varchar(50),
+last_name varchar(50),
+favorite_movie varchar(100),
+)
+```
+```sql
+INSERT INTO #temp_table
+VALUES('Michael', 'Norris', 'Casino')
+
+SELECT *
+FROM #temp_table;
+
+SELECT *
+FROM employee_salary;
+
+SELECT *
+INTO #salary_over_50k
+FROM employee_salary
+WHERE salary >= 50000;
+```
+
+## Stored Procedures (way to save SQL code to reuse)
+	# Specific syntax needed for SQL Server
+
+```sql
+CREATE PROCEDURE large_salaries
+AS
+BEGIN
+	SELECT *
+	FROM employee_salary
+	WHERE salary >= 50000;
+END;
+
+EXEC large_salaries
+```
+
+
+```sql
+CREATE PROCEDURE large_salaries2
+AS
+BEGIN
+	SELECT *
+	FROM employee_salary
+	WHERE salary >= 50000;
+	SELECT*
+	FROM employee_salary
+	WHERE salary >= 10000;
+END
+GO
+
+
+EXEC large_salaries2
+GO
+```
+
+	 
