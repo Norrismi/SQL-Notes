@@ -81,8 +81,8 @@ JOIN CTE_Example2
 
 
 ### Temporary Tables (Tables only viewable to the session they are created in)
-	## Specific syntax needed for SQL Server
-	## Temp Tables are used in more advanced procedures 
+	- Specific syntax needed for SQL Server
+	- Temp Tables are used in more advanced procedures 
 ## First Ex. Not as popular
 ```sql
 CREATE TABLE #temp_table
